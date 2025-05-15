@@ -1,9 +1,18 @@
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
-
+  for(let i = 0; i < data.length; i++){
+    console.log("番組開始時刻 : " + data.list.g1[i].start_time);
+  console.log("番組終了時刻 : " + data.list.g1[i].end_time);
+  console.log("チャンネル : " + data.list.g1[i].service.name);
+  console.log("番組名 : " + data.list.g1[i].title);
+  console.log("番組サブタイトル : " + data.list.g1[i].subtitle);
+  console.log("番組説明文 : " + data.list.g1[i].content);
+  console.log("出演者 : " + data.list.g1[i].act);
+  }
 }
 
+function greeting
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
