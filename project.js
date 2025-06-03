@@ -1,14 +1,24 @@
 window.addEventListener('DOMContentLoaded', function () {
-    // ボタン要素を取得してクリックイベントを設定
-    const button = document.getElementById('btn');
-    button.addEventListener('click', function () {
-      const select = document.getElementById('santaro');
-      const selectedValue = select.value;
-  
-      if (selectedValue === "") {
-        console.log("誰も選ばれていません。");
-      } else {
-        console.log("選ばれたのは: " + selectedValue);
-      }
-    });
+  let a = document.getElementById('a');
+  let b = document.getElementById('b');
+
+  a.addEventListener('click', function () {
+    let c = document.getElementById('santaro1');
+    let d = c.value;
+    if (d === "") {
+      console.log("誰も選ばれていません。");
+    } else {
+      console.log("選ばれたのは: " + d);
+    }
   });
+
+  b.addEventListener('click', function () {
+    let e = document.getElementById('santaro2');
+    let f = e.value;
+    if (f === "") {
+      console.log("誰も選ばれていません。");
+    } else {
+      console.log("選ばれたのは: " + f);
+    }
+  });
+});
